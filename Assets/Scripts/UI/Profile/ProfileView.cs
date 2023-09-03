@@ -23,5 +23,10 @@ namespace UI.Profile
         {
             _playerNameLabel.SetText(playerName);
         }
+
+        public void Test()
+        {
+            
+        }
     }
 }
