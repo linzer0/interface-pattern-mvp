@@ -4,6 +4,7 @@ namespace UI.Profile
 {
     public interface IProfileView : IView
     {
-        public void SetName(string playerName);
+        public void SetPlayerName(string name);
+        public void SetPlayerLevel(int level);
     }
 }

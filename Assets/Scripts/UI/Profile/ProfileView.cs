@@ -6,27 +6,28 @@ namespace UI.Profile
     public class ProfileView : MonoBehaviour, IProfileView
     {
         public Canvas _canvas;
-        public GameObject _root;
+        
         public TextMeshProUGUI _playerNameLabel;
+        public TextMeshProUGUI _playerLevelLabel;
         
         public void Enable()
         {
-            _root.SetActive(true);
+            gameObject.SetActive(true);
         }
 
         public void Disable()
         {
-            _root.SetActive(false);
+            gameObject.SetActive(false);
         }
 
-        public void SetName(string playerName)
+        public void SetPlayerName(string name)
         {
-            _playerNameLabel.SetText(playerName);
+            _playerNameLabel.SetText(name);
         }
 
-        public void Test()
+        public void SetPlayerLevel(int level)
         {
-            
+            _playerLevelLabel.SetText(level.ToString());
         }
     }
 }
