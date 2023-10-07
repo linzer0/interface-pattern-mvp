@@ -5,8 +5,6 @@ namespace UI.Profile
 {
     public class ProfileView : MonoBehaviour, IProfileView
     {
-        public Canvas _canvas;
-        
         public TextMeshProUGUI _playerNameLabel;
         public TextMeshProUGUI _playerLevelLabel;
         
@@ -27,7 +25,7 @@ namespace UI.Profile
 
         public void SetPlayerLevel(int level)
         {
-            _playerLevelLabel.SetText(level.ToString());
+            _playerNameLabel.SetText(level.ToString());
         }
     }
 }

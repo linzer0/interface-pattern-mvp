@@ -1,3 +1,5 @@
+using Organization;
+
 namespace UI.Profile
 {
     public class ProfilePresenter
@@ -8,12 +10,9 @@ namespace UI.Profile
         public ProfilePresenter()
         {
             _profileModel = new ProfileModel();
-            //TODO write logic for getting ProfileView instance 
-            // _profileView = 
-
-            //TODO some way to find _profileView
+            _profileView = ServiceLocator.GetProfileView();
             _profileView.SetPlayerName(_profileModel.GetPlayerName());
-            _profileView.SetPlayerLevel(_profileModel.GetPlayerLevel());
+            _profileView.SetPlayerLevel(_profileModel.PlayerLevel);
         }
     }
 }
