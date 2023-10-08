@@ -14,7 +14,7 @@ namespace Organization
         {
             if (_profileView == null)
             {
-                var prefab = Resources.Load<ProfileView>(typeof(ProfileView).ToString());
+                var prefab = Resources.Load<ProfileView>(nameof(ProfileView));
                 _profileView = Object.Instantiate<ProfileView>(prefab, Vector3.zero, Quaternion.identity);
             }
 

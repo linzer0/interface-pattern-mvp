@@ -6,7 +6,7 @@ namespace Organization
     {
         private void Awake()
         {
-            
+            var presenter = ServiceLocator.GetProfilePresenter();
         }
     }
 }
