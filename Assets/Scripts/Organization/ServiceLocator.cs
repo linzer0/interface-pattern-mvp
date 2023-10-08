@@ -1,11 +1,14 @@
 using UI.Profile;
+using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEngine;
 
 namespace Organization
 {
-    public static class ServiceLocator
+    public class ServiceLocator
     {
         private static IProfileView _profileView;
+        private static ProfileModel _profileModel;
+        private static ProfilePresenter _profilePresenter;
         
         public static IProfileView GetProfileView()
         {
@@ -16,6 +19,26 @@ namespace Organization
             }
 
             return _profileView;
+        }
+
+        public static ProfileModel GetProfileModel()
+        {
+            if (_profileModel == null)
+            {
+                _profileModel = new ProfileModel();
+            }
+
+            return _profileModel;
+        }
+
+        public static ProfilePresenter GetProfilePresenter()
+        {
+            if (_profilePresenter == null)
+            {
+                _profilePresenter = new ProfilePresenter();
+            }
+
+            return _profilePresenter;
         }
     }
 }
