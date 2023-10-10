@@ -16,7 +16,7 @@ namespace UI.Profile
             _profileModel.PlayerNameChanged += UpdatePlayerName;
             
             _profileView.SetPlayerName(_profileModel.GetPlayerName());
-            _profileView.SetPlayerLevel(_profileModel.PlayerLevel);
+            _profileView.SetPlayerLevel(_profileModel.GetPlayerLevel());
         }
 
         private void UpdatePlayerName()
@@ -26,7 +26,7 @@ namespace UI.Profile
 
         private void UpdatePlayerLevel()
         {
-            _profileView.SetPlayerLevel(_profileModel.PlayerLevel);
+            _profileView.SetPlayerLevel(_profileModel.GetPlayerLevel());
         }
 
         ~ProfilePresenter()

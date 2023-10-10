@@ -16,25 +16,21 @@ namespace UI.Profile
             _playerLevel = 23;
         }
         
-        public string GetPlayerName()
-        {
-            return _playerName;
-        }
 
         public void SetPlayerName(string name)
         {
             _playerName = name;
             PlayerNameChanged?.Invoke();
         }
+        
+        public string GetPlayerName() => _playerName;
 
-        public int PlayerLevel
+        public void SetPlayerLevel(int level)
         {
-            get => _playerLevel;
-            set
-            {
-                _playerLevel = value;
-                PlayerLevelChanged?.Invoke();
-            }
+            _playerLevel = level;
+            PlayerLevelChanged?.Invoke();
         }
+
+        public int GetPlayerLevel() => _playerLevel;
     }
 }
