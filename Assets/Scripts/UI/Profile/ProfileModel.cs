@@ -15,7 +15,6 @@ namespace UI.Profile
             _playerName = "Linar Khilazhev";
             _playerLevel = 23;
         }
-        
 
         public void SetPlayerName(string name)
         {
