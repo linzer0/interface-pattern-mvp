@@ -6,6 +6,11 @@ namespace Organization
     {
         private void Awake()
         {
+            CreatePresenter();
+        }
+
+        private void CreatePresenter()
+        {
             var presenter = ServiceLocator.GetProfilePresenter();
         }
     }

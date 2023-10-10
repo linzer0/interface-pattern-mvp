@@ -9,6 +9,12 @@ namespace UI.Profile
         
         private string _playerName;
         private int _playerLevel;
+
+        public ProfileModel()
+        {
+            _playerName = "Linar Khilazhev";
+            _playerLevel = 23;
+        }
         
         public string GetPlayerName()
         {
