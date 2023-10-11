@@ -11,7 +11,7 @@ namespace Organization
 
         private void CreateProfilePresenter()
         {
-            var profilePresenter = ServiceLocator.GetProfilePresenter();
+            var profilePresenter = ProfileManager.GetProfilePresenter();
         }
     }
 }

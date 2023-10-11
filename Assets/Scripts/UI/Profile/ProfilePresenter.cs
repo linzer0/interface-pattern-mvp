@@ -9,8 +9,8 @@ namespace UI.Profile
 
         public ProfilePresenter()
         {
-            _profileModel = ServiceLocator.GetProfileModel();
-            _profileView = ServiceLocator.GetProfileView();
+            _profileModel = ProfileManager.GetProfileModel();
+            _profileView = ProfileManager.GetProfileView();
             
             _profileModel.PlayerLevelChanged += UpdatePlayerLevel;
             _profileModel.PlayerNameChanged += UpdatePlayerName;

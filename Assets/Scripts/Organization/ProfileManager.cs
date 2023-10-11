@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Organization
 {
-    public class ServiceLocator
+    public class ProfileManager
     {
         private static IProfileView _profileView;
         private static ProfileModel _profileModel;
