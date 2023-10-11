@@ -6,12 +6,12 @@ namespace Organization
     {
         private void Awake()
         {
-            CreatePresenter();
+            CreateProfilePresenter();
         }
 
-        private void CreatePresenter()
+        private void CreateProfilePresenter()
         {
-            var presenter = ServiceLocator.GetProfilePresenter();
+            var profilePresenter = ServiceLocator.GetProfilePresenter();
         }
     }
 }
