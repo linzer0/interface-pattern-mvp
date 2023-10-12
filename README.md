@@ -1,6 +1,6 @@
 # Unity MVP Pattern Example
 
-This repository contains a Unity project that demonstrates the Model-View-Presenter (MVP) architectural pattern in the context of a simple Unity game. MVP is a design pattern that helps separate concerns in your code, making it more organized and easier to maintain.
+This repository contains a Unity project that demonstrates the Model-View-Presenter (MVP) architectural pattern in the context of a simple example. MVP is a design pattern that helps separate concerns in your code, making it more organized and easier to maintain.
 
 
 ## Introduction
@@ -14,8 +14,6 @@ The Model-View-Presenter pattern is a variation of the classic Model-View-Contro
 This project will help you understand how to implement the MVP pattern in a Unity application.
 
 ## How MVP Works
-
-In this Unity MVP example, we've created a simple game where the player can move a character. Here's how the MVP pattern is implemented:
 
 - **Model**: The `ProfileModel` class contains the profile's data and logic, such as name and level.
 
